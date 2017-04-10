@@ -10,7 +10,7 @@ hdesktop = win32gui.GetDesktopWindow()
 width = win32api.GetSystemMetrics(win32con.SM_CXVIRTUALSCREEN)
 height = win32api.GetSystemMetrics(win32con.SM_CYVIRTUALSCREEN)
 left = win32api.GetSystemMetrics(win32con.SM_XVIRTUALSCREEN)
-top = win32api.GetSystemMetrics(win32con.SM_YVIRUTUALSCREEN)
+top = win32api.GetSystemMetrics(win32con.SM_YVIRTUALSCREEN)
 
 desktop_dc = win32gui.GetWindowDC(hdesktop)
 img_dc = win32ui.CreateDCFromHandle(desktop_dc)
