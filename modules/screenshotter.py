@@ -15,11 +15,11 @@ top = win32api.GetSystemMetrics(win32con.SM_YVIRTUALSCREEN)
 desktop_dc = win32gui.GetWindowDC(hdesktop)
 img_dc = win32ui.CreateDCFromHandle(desktop_dc)
 
-mem_dc = img_d.CreateCompatibleDC()
+mem_dc = img_dc.CreateCompatibleDC()
 
 screenshot = win32ui.CreateBitmap()
 screenshot.CreateCompatibleBitmap(img_dc, width, height)
-mem_dc.SeclectObject(screenshot)
+mem_dc.SelectObject(screenshot)
 
 mem_dc.BitBlt((0, 0), (width, height), img_dc, (left, top), win32con.SRCCOPY)
 
