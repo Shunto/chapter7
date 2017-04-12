@@ -69,7 +69,8 @@ def KeyStroke(event):
   if count == exit_count:
     return False
 
-  return True
+  #return True
+  return False
 
 def run(**args):
 
